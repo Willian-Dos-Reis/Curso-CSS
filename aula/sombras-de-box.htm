@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+       
+        background-color: darkgrey;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0px;
+        
+
+    }
+
+    header{
+    background-color: aquamarine;
+   padding: 10px;
+   margin: 10px;
+
+    }
+    
+    nav{
+        background-color: rgb(104, 102, 100);
+        padding: 3px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.658);
+        /*sombras*/ 
+    }
+    nav > a{
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+        
+
+    }
+
+    nav:hover{
+        text-decoration: underline;
+
+    }
+
+    main{
+        background-color: aliceblue;
+        padding: 10px;
+        margin: 10px;
+        border-radius:10px 20px 30px 40px;
+    }
+
+    article{
+       background-color: lightgray;
+       padding: 5px;
+
+    }
+    
+    article > aside{
+        background-color: rgb(165, 165, 165);
+    }
+
+    footer{
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 4px;
+        margin:0px;
+    }
+
+    footer > p{
+        margin:0px;
+    }
+
+    
+
+    
+    
+</style>
+<body>
+     <!-- Cabecario  -->
+     <header>
+        <h1>meu site</h1>
+        <nav><!--semantica para menu-->
+            <a href="#">a</a>
+            <a href="#">a</a>
+            <a href="#">a</a>
+        </nav> 
+ </header>
+
+
+<!--corpo da pagina-->
+    <main>
+        <section id="assuntos"> <!--secões -->
+
+        </section>
+        <section id="noticias">
+            <article> <!--artigos-->
+                <h2>Noticias sobre o Brasil</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore quasi molestias veritatis, soluta eius nisi rem perferendis quo? Ut tenetur nisi voluptates dolorem debitis sint nostrum, ipsa repudiandae aut voluptatum!</p>
+                <aside> <!--escrito por -->
+                    <p>escrito por jose</p>
+                </aside>
+
+            </article>
+            <section>
+              <article>
+                  noticias
+              </article>
+            </section>
+
+        </section>
+
+    </main>
+
+    <!--rodape da pagina-->
+    <footer>
+        <p>desenvolvideo pelo curso em video</p>
+
+    </footer>
+    
+    
+</body>
+</html>

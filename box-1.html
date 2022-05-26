@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex box level</title>
+    <style>
+
+        /*box level fica uma embaixo da outra em linhas difenrentes */
+        h1{
+            background-color: whitesmoke;
+            width: 200px;
+            height: 200px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: green;
+
+            /* margens interna da caixa */        
+            padding-top: 16px;
+            padding-right: 16px;
+            padding-bottom: 16px;
+            padding-left: 16px;
+            
+        }
+
+
+
+
+
+
+
+        
+        h2{
+
+            width: 150px;
+            height: 150px;
+            border:solid;
+            border-color: black;
+            border-width: 5px;
+            
+
+            /*margens externa da caixa */
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+        
+        }
+
+         h3{
+            width: 150px;
+            height: 150px;
+            border:solid;
+            border-color: black;
+            border-width: 5px;
+            
+
+            /*margens ineterna centralizada */
+            margin: auto;
+         }
+
+         h4{
+             /* linha entre a borda e a margem */
+            width: 150px;
+            height: 150px;
+            border:solid;
+            border-color: black;
+            border-width: 5px;
+
+            outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon;
+         }
+        
+
+
+
+
+
+
+
+
+        /* box lien fica na msm linha */
+        a{
+            border-width: 5x;
+            border-style:solid;
+            border-color:red
+        }
+
+        div{
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            border: solid;
+            border-color: black;
+            
+
+        }
+        .container{
+            
+            width: 10px;
+            height: 10px;
+            background-color: aliceblue;
+            margin-top: 80px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            border-radius: 10px;
+            border-color: rgb(2, 53, 53);
+            
+            
+            
+            text-align: center;
+            text-align: justify;
+            font-size: 50%;
+
+        }
+        
+    </style>
+</head>
+<body>
+ 
+    <h1>usando padding margens interna de uma caixa</h1>
+    
+
+    <h2>usando magim que sãomargens externas de uma caixa</h2>
+
+    <h3>padding centralizado</h3>
+
+    <h4>outiline é uma linha entre a borda e a margem</h4>
+
+<p>paragrafos tambem sao exemplos de box level, mas os <a href="#"> links sao exemolos de caixas inline-level</a>.vamos ver como isso funciona</p>
+    
+    <div>
+        <div class="container">
+            oi
+        </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseud classe</title>
+    <style>
+        div{
+            display: inline-block;
+            background-color: lightgray;
+            border: 1px solid black;
+            text-align: center;
+            height: 200px;
+            width: 200px;
+        }
+        /*pseudo class é um estado de um determinado elemento
+          se ele esta marcado, ativo, vazio, habilitado */
+
+          div:hover{
+              background-color: yellow;
+
+          } 
+      
+
+          div > p{ /*somente para filha da div */
+              display: none; /*none nao aparece*/
+          }
+          div:hover > p{  /*se passar por cima */
+              display: block; /*aparece em um bloco */
+          }
+      
+         
+        
+         
+    </style>
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo</p>
+  
+    <div>
+        passe o mouese aqui
+        <p>texto escondido</p> <!-- filha da div-->
+        
+    </div>
+    
+</body>
+</html>
