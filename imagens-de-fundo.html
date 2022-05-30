@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+
         body{
-            background-image: url('imagens/wallpaper001.jpg'); /*inserir imagem */
+        background-image: url('How_I_Met_Your_Mother_season_1_DVD_Cover.jpg');/*inserir imagem com url*/
+         background-repeat: repeat-x;/*imagem sem repeti x */
+         background-size: 200px; /*tamanho do img fundo*/
+         
         }
+
+        main{
+            background-image: url("How_I_Met_Your_Mother_season_1_DVD_Cover.jpg");
+            background-repeat: no-repeat;/*imagem sem repeti x */
+        }
+
+
+
+
+
         .quadrado{
             
             display: inline-block ;/*do lado da outra*/
@@ -27,18 +42,25 @@
 
         }
         div#q3{
-            background-image: url('imagens/pattern003.png');/*inserir imagem */
+            background-image: url('The_Witcher_capa.jpg');/*inserir imagem no local da maquina*/
 
+        }
+        main{
+            margin-top: 500px;
+            padding-top: 400px;
         }
     </style>
 </head>
 <body>
-    <div class="central">
+    <main>
+       <div class="central">
 
 <div class="quadrado" id="q1"></div>
     <div class="quadrado" id="q2"></div>
     <div class="quadrado" id="q3"></div>
-    </div>
+    </div> 
+    </main>
+    
         
     
     
