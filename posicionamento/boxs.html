@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 8px;
+    }
+
+    article span{
+        background-color: black;
+        color: white;
+    }
+
+    article, span{
+        padding: 8px;
+        margin: 1px;
+        border-radius: 4px;
+    }
+
+    .purple{
+        background-color: rgb(243, 107, 214);
+    }
+
+    .green{
+        background-color: greenyellow;
+
+    }
+
+    article{
+        display: inline;
+        /*nao funciona*/
+        height: 100px;
+        width: 100px;
+    
+    }
+
+
+</style>
+<body>
+    <!-- (block e inline) dispay em relação oq estiver fora da caixa, sem mexer nos seus filhos-->
+ 
+
+   
+
+    <!--(block) tudo q estiver fora dele ficara um embaixo das outras -->
+
+    <article class="purple">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+
+    </article>
+
+ <article class="green" >
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+
+    </article>
+    <!--(inline) tudo oq estiver fora dela ficara na mesma linha -->
+
+    
+
+    <!-- (flex e grid) tudo oq estiver dentro desta caixa, mexendo nos seus filhos -->
+
+    <!--(Flex) caixas alinhandas nas mesma linhas-->
+
+    <!--(Grid) caixa uma embaixo da outra ocupando toda a horizontal-->
+    
+</body>
+</html>
