@@ -15,6 +15,10 @@
     body{
         padding: 8px;
     }
+    
+    article{
+        
+    }
 
     article span{
         background-color: black;
@@ -36,13 +40,62 @@
 
     }
 
-    article{
-        display: inline;
-        /*nao funciona*/
+    #block{
+        display: block;
+        /* funciona*/
         height: 100px;
-        width: 100px;
+        width: 200px;
+        margin-top: 80px;
     
     }
+
+    .blockd{
+        border: 5px solid black;
+        margin: 20px;
+    }
+
+    .inlined {
+        border: 3px solid black;
+    }
+
+    #inline{
+        display: inline;
+        /* nao funciona*/
+        height: 100px;
+        width: 200px;
+        margin-top: 80px;
+    
+    }
+
+    #inline-block{
+        display: inline-block;
+        /* funciona*/
+        height: 100px;
+        width: 200px;
+        margin-top: 50px;
+    
+    }
+
+    .inline-blockd {
+        margin: 20px;
+        border: 3px solid black;
+    }
+
+    .flex{
+        
+        border: 5px solid black;
+    }
+
+    #flex{
+        display: flex;
+        /*para os pais*/
+        height: 100px;
+        width: 500px;
+        /*para os filhos*/
+        justify-content: space-between;
+    }
+    
+    
 
 
 </style>
@@ -53,29 +106,97 @@
    
 
     <!--(block) tudo q estiver fora dele ficara um embaixo das outras -->
+    <div class="blockd">
+         <h1>block</h1>
 
-    <article class="purple">
+    <article class="purple"  id="block">
         <span>First</span>
         <span>Second</span>
         <span>Third</span>
 
     </article>
 
- <article class="green" >
+ <article class="green" id="block">
         <span>A</span>
         <span>B</span>
         <span>C</span>
+</article>
+    </div>
+   
+    
 
-    </article>
+
     <!--(inline) tudo oq estiver fora dela ficara na mesma linha -->
 
+    <div class="inlined">
+        <h1>inline</h1>
+
+
+   <article class="purple"  id="inline">
+       <span>First</span>
+       <span>Second</span>
+       <span>Third</span>
+
+   </article>
+
+<article class="green" id="inline">
+       <span>A</span>
+       <span>B</span>
+       <span>C</span>
+ </article>
+   </div>
+  
+  
+
+   <!--inline block elementos lado a lado possuindo widh e height e margin desbloqueados -->
+
+   <div class="inline-blockd">
+        <h1>inline-block</h1>
+        <p>elementos lado a lado mas possuindo widh e height</p>
+
+
+        <article class="purple"  id="inline-block">
+            <span>First</span>
+            <span>Second</span>
+            <span>Third</span>
+        </article>
+
+        <article class="green" id="inline-block">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+        </article>
+    </div>
+
+
     
+
 
     <!-- (flex e grid) tudo oq estiver dentro desta caixa, mexendo nos seus filhos -->
 
-    <!--(Flex) caixas alinhandas nas mesma linhas-->
+    <!--(Flex) o pai fica block porem seus filhos ficam inline, alinhandas nas mesma linhas-->
+
+
+    <div class="flex">
+        <h1>flex</h1>
+        <p>o pai fica block porem seus filhos inline,pro widh height para o pai e algunas tipo space bet para os filhos </p>
+    
+    
+        <article class="purple"  id="flex">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="flex">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
 
     <!--(Grid) caixa uma embaixo da outra ocupando toda a horizontal-->
     
+
 </body>
 </html>
