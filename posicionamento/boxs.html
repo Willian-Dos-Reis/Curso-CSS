@@ -56,6 +56,7 @@
 
     .inlined {
         border: 3px solid black;
+        
     }
 
     #inline{
@@ -95,7 +96,25 @@
         justify-content: space-between;
     }
     
+    .grid{
+        margin-top: 40px;
+        border: 5px solid black;
+    }
+
+    #grid{
+        display: grid;
+        /*desbloquedas*/
+        /*width: ; height: ;*/
+    }
+
+    .inline-grid{
+        border: 3px solid black;
+        margin-top : 30px;
+    }
     
+    #inline-grid{
+        display: inline-grid;
+    }
 
 
 </style>
@@ -108,6 +127,7 @@
     <!--(block) tudo q estiver fora dele ficara um embaixo das outras -->
     <div class="blockd">
          <h1>block</h1>
+         <p>os pais ficam em block um embaixo do outro, sem mexer nos filhos </p>
 
     <article class="purple"  id="block">
         <span>First</span>
@@ -152,7 +172,7 @@
 
    <div class="inline-blockd">
         <h1>inline-block</h1>
-        <p>elementos lado a lado mas possuindo widh e height</p>
+        <p>os pais  lado a lado mas possuindo widh e height</p>
 
 
         <article class="purple"  id="inline-block">
@@ -197,6 +217,47 @@
 
     <!--(Grid) caixa uma embaixo da outra ocupando toda a horizontal-->
     
+    <div class="grid">
+        <h1>Grid</h1>
+        <p> pais e filhos em grid, propriedades block vai para os pais  </p>
+    
+    
+        <article class="purple"  id="grid">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="grid">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
+
+    <!--(Inline-Grid) pais em inline filhos em grid com propriedades grids desbloqueadas -->
+
+    <div class="inline-grid">
+        <h1>inline-grid</h1>
+        <p> pais em inline e filhos em em grid, porem filhos com propriedades grids desbloqueadas </p>
+    
+    
+        <article class="purple"  id="inline-grid">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="inline-grid">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
+
+    
+
+
 
 </body>
 </html>
