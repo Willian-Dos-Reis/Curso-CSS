@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: rgb(69, 72, 110);
+            margin: 0;
+            
+            
+        }
+        .main-menu{
+            display: flex;
+            background-color: darkslategray;
+            box-shadow: 10px 10px 43px  rgb(0, 0, 0);
+           
+            justify-content: space-between;
+        }
+
+        .menu-list{
+            width: 20%;
+            padding: 2em;
+            color: white;
+            font-family: sans-serif;
+            font-size: 1.1em;
+            text-align: center;
+            display: inline;
+            text-transform: uppercase;
+            letter-spacing: 0.16em;
+            display: inline;
+
+            
+            
+        }
+        
+            /*aula */
+        .main-menu{
+            position: relative;
+        }
+
+        .menu-list::after{
+            content: '';/*aqui onde fica o dps */
+            position: absolute; /*em relaçao ai pai*/
+            width: 2px;
+            height: 100%;
+            background-color: aqua;
+            left: 0;
+            top: 0;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="main-menu">
+       
+            <li class="menu-list">Painel</li>
+            <li class="menu-list">Produtos</li>
+            <li class="menu-list">Contatos</li>
+            <li class="menu-list">Ajuda</li>
+            <li class="menu-list">Sobre</li>
+        
+    </div>
+    
+</body>
+</html>
