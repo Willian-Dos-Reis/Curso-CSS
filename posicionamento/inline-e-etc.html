@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        padding: 8px;
+    }
+    
+    article{
+        
+    }
+
+    article span{
+        background-color: black;
+        color: white;
+    }
+
+    article, span{
+        padding: 8px;
+        margin: 1px;
+        border-radius: 4px;
+    }
+
+    .purple{
+        background-color: rgb(243, 107, 214);
+    }
+
+    .green{
+        background-color: greenyellow;
+
+    }
+
+    #block{
+        display: block;
+        /* funciona*/
+        height: 100px;
+        width: 200px;
+        margin-top: 80px;
+    
+    }
+
+    .blockd{
+        border: 5px solid black;
+        margin: 20px;
+    }
+
+    .inlined {
+        border: 3px solid black;
+        
+    }
+
+    #inline{
+        display: inline;
+        /* nao funciona*/
+        height: 100px;
+        width: 200px;
+        margin-top: 80px;
+    
+    }
+
+    #inline-block{
+        display: inline-block;
+        /* funciona*/
+        height: 100px;
+        width: 200px;
+        margin-top: 50px;
+    
+    }
+
+    .inline-blockd {
+        margin: 20px;
+        border: 3px solid black;
+    }
+
+    .flex{
+        
+        border: 5px solid black;
+    }
+
+    #flex{
+        display: flex;
+        /*para os pais*/
+        height: 100px;
+        width: 500px;
+        /*para os filhos*/
+        justify-content: space-between;
+    }
+    
+    .grid{
+        margin-top: 40px;
+        border: 5px solid black;
+    }
+
+    #grid{
+        display: grid;
+        /*desbloquedas*/
+        /*width: ; height: ;*/
+    }
+
+    .inline-grid{
+        border: 3px solid black;
+        margin-top : 30px;
+    }
+    
+    #inline-grid{
+        display: inline-grid;
+    }
+
+
+</style>
+<body>
+    <!-- (block e inline) dispay em relação oq estiver fora da caixa, sem mexer nos seus filhos-->
+ 
+
+   
+
+    <!--(block) tudo q estiver fora dele ficara um embaixo das outras -->
+    <div class="blockd">
+         <h1>block</h1>
+         <p>os pais ficam em block um embaixo do outro, sem mexer nos filhos </p>
+
+    <article class="purple"  id="block">
+        <span>First</span>
+        <span>Second</span>
+        <span>Third</span>
+
+    </article>
+
+ <article class="green" id="block">
+        <span>A</span>
+        <span>B</span>
+        <span>C</span>
+</article>
+    </div>
+   
+    
+
+
+    <!--(inline) tudo oq estiver fora dela ficara na mesma linha -->
+
+    <div class="inlined">
+        <h1>inline</h1>
+
+
+   <article class="purple"  id="inline">
+       <span>First</span>
+       <span>Second</span>
+       <span>Third</span>
+
+   </article>
+
+<article class="green" id="inline">
+       <span>A</span>
+       <span>B</span>
+       <span>C</span>
+ </article>
+   </div>
+  
+  
+
+   <!--inline block elementos lado a lado possuindo widh e height e margin desbloqueados -->
+
+   <div class="inline-blockd">
+        <h1>inline-block</h1>
+        <p>os pais  lado a lado mas possuindo widh e height</p>
+
+
+        <article class="purple"  id="inline-block">
+            <span>First</span>
+            <span>Second</span>
+            <span>Third</span>
+        </article>
+
+        <article class="green" id="inline-block">
+            <span>A</span>
+            <span>B</span>
+            <span>C</span>
+        </article>
+    </div>
+
+
+    
+
+
+    <!-- (flex e grid) tudo oq estiver dentro desta caixa, mexendo nos seus filhos -->
+
+    <!--(Flex) o pai fica block porem seus filhos ficam inline, alinhandas nas mesma linhas-->
+
+
+    <div class="flex">
+        <h1>flex</h1>
+        <p>o pai fica block porem seus filhos inline,pro widh height para o pai e algunas tipo space bet para os filhos </p>
+    
+    
+        <article class="purple"  id="flex">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="flex">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
+
+    <!--(Grid) caixa uma embaixo da outra ocupando toda a horizontal-->
+    
+    <div class="grid">
+        <h1>Grid</h1>
+        <p> pais e filhos em grid, propriedades block vai para os pais  </p>
+    
+    
+        <article class="purple"  id="grid">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="grid">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
+
+    <!--(Inline-Grid) pais em inline filhos em grid com propriedades grids desbloqueadas -->
+
+    <div class="inline-grid">
+        <h1>inline-grid</h1>
+        <p> pais em inline e filhos em em grid, porem filhos com propriedades grids desbloqueadas </p>
+    
+    
+        <article class="purple"  id="inline-grid">
+          <span>First</span>
+          <span>Second</span>
+          <span>Third</span>
+        </article>
+    
+        <article class="green" id="inline-grid">
+          <span>A</span>
+          <span>B</span>
+          <span>C</span>
+        </article>
+    </div>
+
+    
+
+
+
+</body>
+</html>
