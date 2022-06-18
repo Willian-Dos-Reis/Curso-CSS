@@ -15,6 +15,8 @@
         }
 
         header{
+            position: relative;
+            
             background-color: yellow;
             
             grid-column: 1/3;
@@ -46,18 +48,37 @@
             display: grid;
             grid-template-columns: 3fr 1fr ;
             grid-template-rows: 20vh 70vh 10vh ;
-            grid-template-areas: "hh hh mm mm aa aa ff ff ";
+            
             
 
         }
+
+        .logo{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            position: absolute;
+            left: 2%;
+            top: 10px;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+
+         
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <header>cabeçalho</header>
-        <main>corpo</main>
-        <aside>lateral</aside>
-        <footer>rodape</footer>
+        <header>
+            <h1>cabeçalho</h1>
+            <div class="logo"> <p>L</p> </div>
+        </header>
+        <main> <h1>corpo</h1> </main>
+        <aside> <h1>lateral</h1> </aside>
+        <footer> <h1>rodape</h1> </footer>
     </div>
    
     
