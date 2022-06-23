@@ -6,6 +6,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -21,7 +22,8 @@ header{
     padding: 30px 100px;
     display: flex;
     justify-content: space-between;
-    z-index: 1000; /*?*/
+    align-items: center;
+    z-index: 10000; /*?*/
 }
 
 header .logo{
@@ -67,11 +69,23 @@ header ul li a:hover{
 section{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     padding: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+/*efeito na barra de baixo para deixar ela dispesa antes */
+section::before{
+    content: ''; /*so para potar edeifto*/
+    /*colocando efeito na parte de baixo*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522,transparent);
+    z-index: 1000;
+
 }
 
 section img {
@@ -79,7 +93,10 @@ section img {
     top:0;
     left: 0;
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    pointer-events: none;/*?*/
+
 
 }
 
@@ -111,8 +128,22 @@ section img#mountains_front{
     background: #fff;
     z-index: 0;
     /*colocou 100px para baico  no eixo y*/
-    transform: translatey(100px);
-    
+    transform: translateY(100px);
+}
 
+.sec{
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+}
 
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p {
+    font-size: 1.2em;
+    color: #fff;
 }
