@@ -34,6 +34,9 @@
             height: 700px;
             background-color: #333;
             border-radius: 20px;
+            grid-area: "sidenav";
+            grid-row: sidenav; /*mesclar linha*/
+            /*nas filhas colunas sao linhas*/
         }
 
          /*cada item*/
@@ -42,14 +45,17 @@
             height: 300px;
             background-color: #333;
             border-radius: 20px;
+            grid-area: "item";
         }
 
          /*rodape*/
-         footer{
+         .footer{
             width: auto; /*prenche toda tela lateral */
             height: 300px;
             background-color: #333;
             border-radius: 20px;
+            grid-area: footer;
+            grid-column: footer;
         }
         
     </style>
@@ -69,7 +75,7 @@
 
         <div class="item"><img src="../imagens para atividades/ee.jpg" alt=""><p>item</p></div>
 
-        <footer></footer>
+        <div class="footer"></div>
     </section>
     
 </body>
