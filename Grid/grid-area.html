@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        .container{
+            /*largura recomendad para conatiner entre 900 e 1200*/
+            /*vai ter no maximo uma largura de 1200*/
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: grid; /*vai no pai*/
+            grid-template-areas: 
+            "sidenav item item "
+            "sidenav item item"
+            "footer footer"
+            ;
+        }
+
+        img{
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        /*menu lateral*/
+        .sidenav{
+            width: 300px;
+            height: 700px;
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+         /*cada item*/
+         .item{
+            width: 300px;
+            height: 300px;
+            background-color: #333;
+            border-radius: 20px;
+        }
+
+         /*rodape*/
+         footer{
+            width: auto; /*prenche toda tela lateral */
+            height: 300px;
+            background-color: #333;
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Grid layout</h1>
+
+    <section class="container">
+
+        <div class="sidenav"></div>
+
+        <div class="item"><img src="../imagens para atividades/500px.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/ee.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/nav.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/ee.jpg" alt=""><p>item</p></div>
+
+        <footer></footer>
+    </section>
+    
+</body>
+</html>
