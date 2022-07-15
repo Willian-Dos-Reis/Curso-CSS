@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-color: black;
+            background-color: rgb(85, 85, 85);
             color: white;
         }
         .container{
@@ -21,10 +21,12 @@
             "sidenav item item"
             "footer footer footer"
             ;
+            grid-gap: 20px;
             /*smepre o numero de coluas tem q ser igual*/
         }
 
         img{
+            height: 100%;
             width: 100%;
             border-radius: 20px;
         }
@@ -42,7 +44,8 @@
 
          /*cada item*/
          .item{
-            width: 300px;
+            max-width: 300px; /**/
+            min-width: 250px;
             height: 300px;
             background-color: #333;
             border-radius: 20px;
@@ -51,12 +54,13 @@
 
          /*rodape*/
          .footer{
-            width: auto; /*prenche toda tela lateral */
-            height: 300px;
+            width: auto ; /*prenche toda tela lateral */
+            height: 200px;
             background-color: #333;
             border-radius: 20px;
             grid-area: "footer";
             grid-column: footer;
+            
         }
         
     </style>
