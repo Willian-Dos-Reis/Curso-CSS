@@ -6,59 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+        body{
+            background-color: rgb(85, 85, 85);
+            color: white;
+        }
+        .container{
+            /*largura recomendad para conatiner entre 900 e 1200*/
+            /*vai ter no maximo uma largura de 1200*/
+            max-width: 1200px; 
+            margin: 0 auto; 
+            display: grid; /*vai no pai*/
+            grid-template-areas: 
+            "sidenav item item"
+            "sidenav item item"
+            "footer footer footer"
+            ;
+            grid-gap: 20px;
+            /*smepre o numero de coluas tem q ser igual*/
+        }
 
-    }
-        .conteudo{
-            height: 10px ;
+        img{
+            height: 100%;
             width: 100%;
-         }
+            border-radius: 20px;
+        }
 
-         .top{
-            height: 40px ;
-            width: 100%;
-            position: fixed;
-            top: 10px;
-            background-color: blue;
-         }
+        /*menu lateral*/
+        .sidenav{
+            width: 300px;
+            height: 700px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "sidenav";
+            grid-row: sidenav; /*mesclar linha*/
+            /*nas filhas colunas sao linhas*/
+        }
 
-         .conteudosite{
-            height: 750px;
-            background-color: green;
-            margin: 0% 30px 15% 30px;
+         /*cada item*/
+         .item{
+            max-width: 300px; /**/
+            min-width: 250px;
+            height: 300px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "item";
+        }
 
-         }
-
-         .rodape{
-            height: 30px ;
-            width: 100%;
-            position: fixed;
-            bottom: 10px;
-            background-color: yellow;
-         }
-
-         @media (max-widht:420px) {
-            .conteudosite{
-            height: 750px;
-            background-color: rgb(255, 0, 0);
-         
-
-         }
-         }
+         /*rodape*/
+         .footer{
+            width: auto ; /*prenche toda tela lateral */
+            height: 200px;
+            background-color: #333;
+            border-radius: 20px;
+            grid-area: "footer";
+            grid-column: footer;
+            
+        }
+        
     </style>
 </head>
 <body>
-    <div class="conteudo">
+    <h1>Grid layout</h1>
 
-        <div class="top"></div>
-        <div class="conteudo"></div>
-        <div class="conteudosite"></div>
-        <div class="rodape"></div>
+    <section class="container">
 
-    </div>
+        <div class="sidenav"></div>
+
+        <div class="item"><img src="../imagens para atividades/500px.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/ee.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/nav.jpg" alt=""><p>item</p></div>
+
+        <div class="item"><img src="../imagens para atividades/ee.jpg" alt=""><p>item</p></div>
+
+        <div class="footer"></div>
+    </section>
     
 </body>
 </html>
