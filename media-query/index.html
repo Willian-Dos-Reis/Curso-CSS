@@ -23,6 +23,7 @@
             ;
             grid-gap: 20px;
             /*smepre o numero de coluas tem q ser igual*/
+            justify-content: center;
         }
 
         img{
@@ -65,7 +66,7 @@
 
         /*media queire*/
         /*quando chegar em menos de 853 fara oq estiver no bloco*/
-        @media (min-width: 853px){
+        @media (max-width: 853px){
             .container{
                 
                 grid-template-areas: 
@@ -73,9 +74,27 @@
                 "sidenav item"
                 "sidenav item "
                 "sidenav item "
-                "footer footer footer"
+                "footer footer"
             ;
             
+        }
+        }
+
+        @media (max-width:581px){
+            .container{
+                grid-template-areas: 
+                "sidenav "
+                "item"
+                "item "
+                "item "
+                "footer"
+            ;
+            
+        }
+
+        .sidenav{
+            
+            height: 200px;
         }
         }
         
